@@ -17,20 +17,20 @@
 	
 </head>
 
-<body class="font-sans text-gray-900 leading-normal tracking-wider bg-cover" style="background-image:url('https://source.unsplash.com/lKjHvySvwSk');">
+<body class="font-sans text-gray-900 leading-normal tracking-wider bg-cover">
 	
 	<!-- Header & navigation -->
-	<nav id="header" class="hidden flex flex-wrap items-center block fixed inset-x-0 top-0 z-10 w-full bg-white">
+	<nav id="header" class="hidden flex flex-wrap items-center block fixed inset-x-0 top-0 z-10 w-full bg-white border-b-2 border-black">
 		
 		<!-- Icon and Name -->
     	<a href="#" class="p-2 mr-4 inline-flex items-center outline-none">
-			<div class="block rounded-full h-10 w-20 bg-cover bg-center" style="background-image: url('https://source.unsplash.com/MP0IUfwrn0A')"></div>
-        	<span class="text-xl ml-3 text-base font-bold uppercase">Talwind CSS</span>
+			<div class="block rounded-full h-10 w-20 bg-cover bg-center" style="background-image: url('https://source.unsplash.com/user/dmadventure/Cb9nTN-66F0')"></div>
+        	<span class="text-xl ml-3 text-base font-bold uppercase">Siddique Irshad</span>
 		</a>
 		
 		<!-- Pin to top right corner Theme changing button -->
 		<div class="h-full w-15 pr-4">
-			<button class="js-change-theme focus:outline-none">🌙</button>
+			<button id="in-head" onclick="changeTheme()" class="js-change-theme focus:outline-none">🌙</button>
 		</div>
 		
 		<!-- Hidden menu toggler -->
@@ -45,11 +45,9 @@
         		<a href="#skills" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center text-sm hover:bg-teal-300 outline-none">Skills</a>
 				<a href="#projects" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center text-sm hover:bg-teal-300 outline-none">Projects</a>
         		<a href="#aboutme" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center text-sm hover:bg-teal-300 outline-none">About me</a>
-        		<a href="#contect" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center text-sm hover:bg-teal-300 outline-none">Contact</a>
+        		<a href="#contact" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center text-sm hover:bg-teal-300 outline-none">Contact</a>
         	</div>
 		</div>
-
-
 		
 	</nav> 
 
@@ -60,26 +58,31 @@
 		<div id="profile" class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0">
 			<div class="p-4 md:p-12 text-center lg:text-left">
 				<!-- Image for mobile view-->
-				<div class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" style="background-image: url('https://source.unsplash.com/MP0IUfwrn0A')"></div>
+				<div class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" style="background-image: url('https://source.unsplash.com/user/fideletty/nWdhpUrXxYY')"></div>
 				
 				<h1 class="text-3xl font-bold pt-8 lg:pt-0">Irshad Ahmed Siddique</h1>
 				<div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-teal-500 opacity-25"></div>
 				<p class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start"> What you do</p>
 				<p class="pt-8 text-sm">Started with Programing languages, tried my hands at Web Development. Now, aspiring to be a Android Developer! </br> I have miles to go. </br> But, what's the fun if it's easy! </p>
 
-				<div class="pt-12 pb-8">
+				<!-- <div class="pt-12 pb-8">
 					<a href="#" class="bg-teal-700 hover:bg-teal-900 text-white font-bold py-2 px-4 rounded-full focus:outline-none">Download Resume</a>
-				</div>
+				</div> -->
 
 				<div class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between">
-					<a class="link outline-none" href="##" data-tippy-content="+91-77158-61550"><i class="fab fa-whatsapp-square fa-2x"></i></a>
-					<a class="link outline-none" href="https://www.facebook.com/irshad.siddique.31337/" data-tippy-content="@Irshad Siddique"><i class="fab fa-facebook-square fa-2x"></i></a>
-					<a class="link outline-none" href="https://www.instagram.com/siddique1550/" data-tippy-content="@Siddique1550"><i class="fab fa-instagram-square fa-2x"></i></a>
-					<a class="link outline-none" href="https://twitter.com/SiddiqueIrshad2" data-tippy-content="@SiddiqueIrshad2"><i class="fab fa-twitter-square fa-2x"></i></a>
-					<a class="link outline-none" href="https://www.linkedin.com/in/irshad-ahmed-30b5571a9/" data-tippy-content="@irshad-ahmed"><i class="fab fa-linkedin-in fa-2x"></i></a>
-					<a class="link outline-none" href="mailto:mr.irshad.siddique@gmail.com" data-tippy-content="mr.irshad.siddique@gmail.com"><i class="far fa-envelope fa-2x"></i></a>
+					<a class="link outline-none hover:text-orange-600" href="##" data-tippy-content="+91-77158-61550"><i class="fab fa-whatsapp-square fa-2x"></i></a>
+					<a class="link outline-none hover:text-indigo-500" href="https://www.facebook.com/irshad.siddique.31337/" data-tippy-content="@Irshad Siddique"><i class="fab fa-facebook-square fa-2x"></i></a>
+					<a class="link outline-none hover:text-yellow-500" href="https://www.instagram.com/siddique1550/" data-tippy-content="@Siddique1550"><i class="fab fa-instagram-square fa-2x"></i></a>
+					<a class="link outline-none hover:text-red-500" href="https://twitter.com/SiddiqueIrshad2" data-tippy-content="@SiddiqueIrshad2"><i class="fab fa-twitter-square fa-2x"></i></a>
+					<a class="link outline-none hover:text-green-500" href="https://www.linkedin.com/in/irshad-ahmed-30b5571a9/" data-tippy-content="@irshad-ahmed"><i class="fab fa-linkedin-in fa-2x"></i></a>
+					<a class="link outline-none hover:text-teal-500" href="mailto:mr.irshad.siddique@gmail.com" data-tippy-content="mr.irshad.siddique@gmail.com"><i class="far fa-envelope fa-2x"></i></a>
 				</div>
 
+				
+			</div>
+			
+			<div class="absolute top-0 right-0 h-20 w-15 mr-5 mt-5">
+				<button id="out-head" onclick="changeTheme()" class="js-change-theme focus:outline-none">🌙</button>
 			</div>
 
 		</div>
@@ -87,7 +90,7 @@
 		<!--Img Col-->
 		<div class="w-full lg:w-2/5">
 			<!-- Big profile image for side bar (desktop) -->
-			<img src="https://source.unsplash.com/MP0IUfwrn0A" class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block">
+			<img src="https://source.unsplash.com/user/dmadventure/Cb9nTN-66F0" class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block">
 			<!-- Image from: http://unsplash.com/photos/MP0IUfwrn0A -->
 		</div>
 
@@ -117,56 +120,78 @@
 				<div class="owl-carousel">
 					<div class="card max-w-sm opacity-1 bg-white rounded-lg mx-3 my-1 text-center overflow-hidden shadow-lg hover:shadow-outline">
 						<div class="p-2">
-							<div class="font-bold text-xl">The Coldest Sunset</div>
+							<div class="font-bold text-xl">
+								<a href="https://github.com/DeWill404/minesweeper" target="_blank" class="outline-none hover:text-indigo-600">Minesweeper</a>
+							</div>
 							<div class="mx-auto mb-3 w-2/5 pt-3 border-b-2 border-teal-500 opacity-25"></div>
-							<p class="text-sm">Lorem ipsum dolor sit amet,consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitation. </p>
+							<p class="text-sm"> Minesweeper game developed in language C, compatible with Turbo C environment. Encorprated with many concept of C like, overloading, self written GUI functions, and totally bug free and tested on many PC. </p>
 						</div>
 						<div class="p-1">
-							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700">#photography</span>
-							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700">#travel</span>
-							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700">#winter</span>
+							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700"> #Turbo C </span>
+							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700"> #GUI </span>
+							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700"> #game </span>
 						</div>
 					</div>
 					<div class="card max-w-sm opacity-1 bg-white rounded-lg mx-3 my-1 text-center overflow-hidden shadow-lg hover:shadow-outline">
 						<div class="p-2">
-							<div class="font-bold text-xl">The Coldest Sunset</div>
+							<div class="font-bold text-xl">
+								<a href="https://github.com/DeWill404/Paint_WebApp" target="_blank" class="outline-none hover:text-indigo-600">Paint Web App</a>
+							</div>
 							<div class="mx-auto mb-3 w-2/5 pt-3 border-b-2 border-teal-500 opacity-25"></div>
-							<p class="text-sm">Lorem ipsum dolor sit amet,consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitation. </p>
+							<p class="text-sm"> Paint on the canvas using many tools like brush, pencils, shapes or free hande drawings and colors or change size of tools and Download it you want, Redo & Undo at most 3 times, scripts are totally written in ECMAScript. </p>
 						</div>
 						<div class="p-1">
-							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700">#photography</span>
-							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700">#travel</span>
-							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700">#winter</span>
+							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700"> #Paint </span>
+							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700"> #ES </span>
+							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700"> #WebApp </span>
 						</div>
-					</div>
+					</div> 
 					<div class="card max-w-sm opacity-1 bg-white rounded-lg mx-3 my-1 text-center overflow-hidden shadow-lg hover:shadow-outline">
 						<div class="p-2">
-							<div class="font-bold text-xl">The Coldest Sunset</div>
+							<div class="font-bold text-xl">
+								<a href="https://github.com/DeWill404/linux-terminal" target="_blank" class="outline-none hover:text-indigo-600">Terminal Replica</a>
+							</div>
 							<div class="mx-auto mb-3 w-2/5 pt-3 border-b-2 border-teal-500 opacity-25"></div>
-							<p class="text-sm">Lorem ipsum dolor sit amet,consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitation. </p>
+							<p class="text-sm"> Made linux termial Replica using python3, compatible with all kind of OS. It is a kind of light-weight, dumb terminal and very fast to operate. It create a kind of vertual environment to work with and have many commands to play. </p>
 						</div>
 						<div class="p-1">
-							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700">#photography</span>
-							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700">#travel</span>
-							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700">#winter</span>
+							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700"> #Terminal </span>
+							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700"> #CLI </span>
+							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700"> #py3 </span>
 						</div>
-					</div>
+					</div> 
 					<div class="card max-w-sm opacity-1 bg-white rounded-lg mx-3 my-1 text-center overflow-hidden shadow-lg hover:shadow-outline">
 						<div class="p-2">
-							<div class="font-bold text-xl">The Coldest Sunset</div>
+							<div class="font-bold text-xl">
+								<a href="https://github.com/DeWill404/Visual-Stdio-CPP-Projects" target="_blank" class="outline-none hover:text-indigo-600">C++ Projects</a>
+							</div>
 							<div class="mx-auto mb-3 w-2/5 pt-3 border-b-2 border-teal-500 opacity-25"></div>
-							<p class="text-sm">Lorem ipsum dolor sit amet,consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitation. </p>
+							<p class="text-sm"> Git Repositry contains many cpp projects like, CPP Bank, Maze, Digital Clock, Stickmen, and Tic-Tac-Toe and are only compatible with Visual Studio Environment. Many concepts like GUI, multi-threding and many more are used. </p>
 						</div>
 						<div class="p-1">
-							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700">#photography</span>
-							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700">#travel</span>
-							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700">#winter</span>
+							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700"> #C </span>
+							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700"> #Projects </span>
+							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700"> #GUI </span>
 						</div>
-					</div>
+					</div> 
+					<div class="card max-w-sm opacity-1 bg-white rounded-lg mx-3 my-1 text-center overflow-hidden shadow-lg hover:shadow-outline">
+						<div class="p-2">
+							<div class="font-bold text-xl">
+								<a href="https://github.com/DeWill404/Steganography" target="_blank" class="outline-none hover:text-indigo-600">Steganography</a>
+							</div>
+							<div class="mx-auto mb-3 w-2/5 pt-3 border-b-2 border-teal-500 opacity-25"></div>
+							<p class="text-sm"> This project can hide under an image and also retrive text from it. Text can be manually entered or selected from file. It is GUI application developed using py3, also provide feature of encryption and decryption of data with password. </p>
+						</div>
+						<div class="p-1">
+							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700"> #py3 </span>
+							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700"> #Stegano </span>
+							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700"> #tkinter </span>
+						</div>
+					</div> 	
 				</div>
 			</div>
 			<div class="text-right">
-				<button class="text-base py-2 px-4 rounded-full font-bold focus:outline-none bg-teal-700 hover:bg-teal-900 hover:text-black"><a href="#" class="focus:outline-none">More on Github <i class="fab fa-github"></i></a></button>
+				<button class="text-base py-2 px-4 rounded-full font-bold focus:outline-none bg-teal-700 hover:bg-teal-900 hover:text-black"><a href="https://github.com/DeWill404" target="_blank" class="focus:outline-none">More on Github <i class="fab fa-github"></i></a></button>
 			</div>
 		</div>
 	</div>
@@ -178,8 +203,7 @@
 				<span class="text-xl ml-3 text-base font-bold uppercase">About me</span>
 				<div class="mx-auto mb-3 lg:mx-0 w-2/5 pt-3 border-b-2 border-teal-500 opacity-25"></div>
 				<p class="block p-2">
-					I have tried different languages, frameworks and technologies. Data Science seems to have caught my eye. Considering it as my career path.
-					Apart from that, I'm fun to hang out with.
+					I am nothing but a cyber nerd did slow and late start, but starting to catch up with pace. Currently doing B.tech in COMPUTERS from well known college "M. H. S. S. College Of Engineering" Byculla, Mumbai. Not have much other interest but like meet with different new peoples.
 				</p>
 			</div>
 			<div class="shadow-md">
@@ -189,59 +213,66 @@
 						<div class="inline-block mx-0 w-1/5">Education</div>
 					</label>
 					<div class="tab-content overflow-hidden border-l-2 border-r-2 border-indigo-500 leading-normal">
-						<table class="text-center w-3/4 my-2 mx-auto">
+						<table class="text-center my-2 mx-auto">
 							<tr class="border-b border-grey-light border-dashed">
-								<td class="py-4 px-2 w-1/3 border-r border-dashed">New York</td>
-								<td class="p-4">Edit</td>
+								<td class="p-2 border-r border-dashed">SY B.tech</td>
+								<td class="p-2 border-r border-dashed">MHSS College</td>
+								<td class="p-2">7.61 CGPA</td>
 							</tr>
 							<tr class="border-b border-grey-light border-dashed">
-								<td class="py-4 px-2 w-1/3 border-r border-dashed">Mumbai</td>
-								<td class="p-4">Edit</td>
+								<td class="p-2 border-r border-dashed">HSC</td>
+								<td class="p-2 border-r border-dashed">N.L. College</td>
+								<td class="p-2">83%</td>
 							</tr>
 							<tr>
-								<td class="py-4 px-2 w-1/3 border-r border-dashed">England</td>
-								<td class="p-4">Edit</td>
+								<td class="p-2 border-r border-dashed">SSC</td>
+								<td class="p-2 border-r border-dashed">Al-Hira School</td>
+								<td class="p-2">90%</td>
 							</tr>
 						</table>
 					</div>
 				</div>
-				<div class="tab w-full overflow-hidden border-t">
+				<!-- <div class="tab w-full overflow-hidden border-t">
 					<input class="absolute opacity-0" id="tab-multi-two" type="checkbox" name="tabs">
 					<label class="block p-5 leading-normal cursor-pointer" for="tab-multi-two">
 						<div class="inline-block mx-0 w-1/5">Work</div>
 					</label>
 					<div class="tab-content overflow-hidden border-l-2 border-r-2 border-indigo-500 leading-normal">
-						<table class="text-center w-3/4 my-2 mx-auto">
+						<table class="text-center my-2 mx-auto">
 							<tr class="border-b border-grey-light border-dashed">
-								<td class="py-4 px-2 w-1/3 border-r border-dashed">New York</td>
-								<td class="p-4">Edit</td>
+								<td class="p-2 border-r border-dashed">SY B.tech</td>
+								<td class="p-2 border-r border-dashed">MHSS College</td>
+								<td class="p-2">7.61 CGPA</td>
 							</tr>
 							<tr class="border-b border-grey-light border-dashed">
-								<td class="py-4 px-2 w-1/3 border-r border-dashed">Mumbai</td>
-								<td class="p-4">Edit</td>
+								<td class="p-2 border-r border-dashed">HSC</td>
+								<td class="p-2 border-r border-dashed">N.L. College</td>
+								<td class="p-2">83%</td>
 							</tr>
 							<tr>
-								<td class="py-4 px-2 w-1/3 border-r border-dashed">England</td>
-								<td class="p-4">Edit</td>
+								<td class="p-2 border-r border-dashed">SSC</td>
+								<td class="p-2 border-r border-dashed">Al-Hira School</td>
+								<td class="p-2">90%</td>
 							</tr>
-						</table>
 					</div> 
-				</div>
+				</div> -->
 				<div class="tab w-full overflow-hidden border-t">
 					<input class="absolute opacity-0 " id="tab-multi-three" type="checkbox" name="tabs">
 					<label class="block p-5 leading-normal cursor-pointer" for="tab-multi-three">
 						<div class="inline-block mx-0 w-1/5">Hobbies</div>
 					</label>
 					<div class="tab-content overflow-hidden border-l-2 border-r-2 border-indigo-500 leading-normal">
-						<p class="p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+						<p class="p-5">
+							There nothing much to mentioned, like playing Cricket, Carrom. Love to go on Traking or trip, meet new people. Kind of addicted to manga :)
+						</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<!-- Contect -->
-	<footer id="contect" class="bg-white text-base">
+	<!-- contact -->
+	<footer id="contact" class="bg-white text-base">
 		<!-- Will be modified letter
 		<div class="p-5 float-right mx-auto">
 			<input class="w-32 bg-gray-100 rounded mr-2 border border-gray-400 focus:outline-none focus:border-indigo-500 text-base py-2 px-4" type="text">
@@ -269,7 +300,7 @@
 						<i class="far fa-envelope"></i>
 					</a>
 				</span>
-				<p class="text-sm sm:ml-auto">&copy;2020 - Irshad Ahmed - All Right Reserved </p>
+				<p class="text-sm sm:ml-auto sm:mt-1">&copy;2020 - Irshad Ahmed - All Right Reserved </p>
 			</div>
 		</div>
 	</footer>

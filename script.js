@@ -7,8 +7,8 @@ $(document).ready(function() {
 		nav : true,
 		dots : false,
 		navText : [
-			'<button class="inline-block p-2 bg-teal-700 mr-2 my-1 text-center text-white border-blue hover:shadow-outline hover:bg-teal-900 rounded-full focus:outline-none"><i class="fas fa-angle-double-left"></i></button>', 
-			'<button class="inline-block p-2 bg-teal-700 ml-2 my-1 text-center text-white border-blue hover:shadow-outline hover:bg-teal-900 rounded-full focus:outline-none"><i class="fas fa-angle-double-right"></i></button>'
+			'<button class="inline-block px-2 py-1 bg-teal-700 mr-2 my-1 text-center text-white border-blue hover:shadow-outline hover:bg-teal-900 rounded-lg focus:outline-none"><i class="fas fa-angle-double-left"></i></button>', 
+			'<button class="inline-block px-2 py-1 bg-teal-700 ml-2 my-1 text-center text-white border-blue hover:shadow-outline hover:bg-teal-900 rounded-lg focus:outline-none"><i class="fas fa-angle-double-right"></i></button>'
 		],
 		loop : true,
 		margin : 10,
@@ -32,19 +32,27 @@ $(document).ready(function() {
 		});
 	});
 
+	// To hide and show header if not on home page
+	scrollFunction();
+
 });
 
+// js-change-theme
 
-
-window.onscroll = function() {scrollFunction()};
+// Storing current scrolled height
 var offsetHeight = document.getElementById('profile').offsetHeight;
+var head = document.querySelector('nav');
+// Redefining Scroll function
+window.onscroll = function() { scrollFunction() };
 function scrollFunction() {
-  if (document.body.scrollTop < offsetHeight && document.documentElement.scrollTop < offsetHeight) {
-	$('#header').addClass('hidden');
-  } else {
-    $('#header').removeClass('hidden');
+	if (document.body.scrollTop < offsetHeight && document.documentElement.scrollTop < offsetHeight) {
+		if ( ! head.classList.contains('hidden') ) {
+			$('#header').addClass('hidden');
+		}
+	} else {
+		$('#header').removeClass('hidden');
+	}
 }
-} 
 
 
 
@@ -54,26 +62,26 @@ tippy('.link', { placement: 'bottom' } );
 
 
 //Toggle mode
-const toggle = document.querySelector('.js-change-theme');
 const body = document.querySelector('body');
 const profile = document.getElementById('profile');
 const header = document.getElementById('header');
 const skill = document.getElementById('skills');
 const project = document.getElementById('projects');
 const about = document.getElementById('aboutme');
-const contect = document.getElementById('contect');
+const contact = document.getElementById('contact');
 
-// Adding and removing theme class
-toggle.addEventListener('click', () => {
+// Theme changing function
+function changeTheme() {
 	if (body.classList.contains('text-gray-900')) {
 		// Button Text
-		toggle.innerHTML = "🌞";
+		this.innerHTML = "🌞";
 		// Body Class
 		body.classList.remove('text-gray-900');				body.classList.add('text-gray-100');
 		// Profile Class
 		profile.classList.remove('bg-white');				profile.classList.add('bg-gray-900');
 		// Header Class
-		header.classList.remove('bg-white');				header.classList.add('bg-gray-900');
+		header.classList.remove('bg-white');				header.classList.add('bg-black');
+		header.classList.remove('border-black');				header.classList.add('border-white');
 		// Skill Class
 		skill.classList.remove('bg-white');					skill.classList.add('bg-gray-900');
 		// Project Class
@@ -82,20 +90,20 @@ toggle.addEventListener('click', () => {
 		$('.card').removeClass('bg-white');					$('.card').addClass('bg-gray-800');
 		// About Me Class
 		about.classList.remove('bg-white');					about.classList.add('bg-gray-900');
-		// Contect Me Class
-		contect.classList.remove('bg-white');				contect.classList.add('bg-gray-900');
-		// Contect links modification
+		// contact Me Class
+		contact.classList.remove('bg-white');				contact.classList.add('bg-gray-900');
+		// contact links modification
 		$('.link').removeClass('border-black');				$('.link').addClass('border-white');
-
 	} else {
 		// Button Text
-		toggle.innerHTML = "🌙";
+		this.innerHTML = "🌙";
 		// Body Class
 		body.classList.remove('text-gray-100');				body.classList.add('text-gray-900');
 		// Profile Class
 		profile.classList.remove('bg-gray-900');			profile.classList.add('bg-white');	
 		// Header Class
-		header.classList.remove('bg-gray-900');				header.classList.add('bg-white');
+		header.classList.remove('bg-black');				header.classList.add('bg-white');
+		header.classList.remove('border-white');				header.classList.add('border-black');
 		// Skill Class
 		skill.classList.remove('bg-gray-900');				skill.classList.add('bg-white');
 		// Project Class
@@ -104,20 +112,20 @@ toggle.addEventListener('click', () => {
 		$('.card').removeClass('bg-gray-800');				$('.card').addClass('bg-white');
 		// About Me Class
 		about.classList.remove('bg-gray-900');				about.classList.add('bg-white');
-		// Contect Me Class
-		contect.classList.remove('bg-gray-900');			contect.classList.add('bg-white');
-		// Contect links modification
+		// contact Me Class
+		contact.classList.remove('bg-gray-900');			contact.classList.add('bg-white');
+		// contact links modification
 		$('.link').removeClass('border-white');				$('.link').addClass('border-black');
 	}
-});
+}
 
 
 
 // Skill Chart Function
 function radar_chart(selector, data) {
 	// Themes begin
-	// Themes end
 	am4core.useTheme(am4themes_animated);
+	// Themes end
 
 	// Create chart instance
 	var chart = am4core.create(selector, am4charts.RadarChart);
