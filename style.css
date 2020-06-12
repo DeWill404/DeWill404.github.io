@@ -2,6 +2,10 @@ body {
 	background: url('https://source.unsplash.com/user/joshuaearle/C6duwascOEA') fixed no-repeat center;
 }
 
+/* Background for logo */
+.logo {
+	background-image: url('https://source.unsplash.com/user/dmadventure/Cb9nTN-66F0');
+}
 
 /* Make max navigation width */
 @media (min-width: 1024px) {
@@ -9,40 +13,38 @@ body {
 }
 
 
-
+/* Make # of card */
 .tag {
 	display: inline-block;
 }
 
 
-
-/* Tab content - closed */
+/* Tab content on closed */
 .tab-content {
 	max-height: 0;
-	-webkit-transition: max-height .35s;
-	-o-transition: max-height .35s;
 	transition: max-height .35s;
 }
 
-/* :checked - resize to full height */
+/* Open and show contect when clicked */
 .tab input:checked ~ .tab-content {
 	max-height: 100vh;
 }
 
 /* Label formatting when open */
 .tab input:checked + label {
-	padding: 1.25rem; /*.p-5*/	
+	padding: 1.25rem;
 	border-left-width: 2px;
 	border-right-width: 2px;
-	border-color: #6574cd; /*.border-indigo*/	
+	border-color: #6574cd;
 }
 .tab input:checked + label div {
-	font-size: 1.25rem; /*.text-xl*/	
-	border-bottom-width: 2px; 	
-	border-color: #a3b8b4;	
+	font-size: 1.25rem;
+	border-bottom-width: 2px;
+	border-color: #a3b8b4;
 	color: #6574cd;
 }
-/* Icon */
+
+/* Icon of Checkbox */
 .tab label::after {
 	float:right;
 	right: 0;
@@ -58,18 +60,18 @@ body {
 	transition: all .35s;
 }
 
-/* Icon formatting - closed */
+/* Icon formatting on closed */
 .tab input[type=checkbox] + label::after {
 	content: "+";
-	font-weight:bold; /*.font-bold*/
-	border-width: 1px; /*.border*/
-	border-radius: 9999px; /*.rounded-full */
-	border-color: #b8c2cc; /*.border-grey*/
+	font-weight:bold;
+	border-width: 1px;
+	border-radius: 9999px;
+	border-color: #b8c2cc;
 }
 
-/* Icon formatting - open */
+/* Icon formatting on open */
 .tab input[type=checkbox]:checked + label::after {
 	transform: rotate(315deg);
-	background-color: #6574cd; /*.bg-indigo*/
-	color: #f8fafc; /*.text-grey-lightest*/
+	background-color: #6574cd;
+	color: #f8fafc;
 }

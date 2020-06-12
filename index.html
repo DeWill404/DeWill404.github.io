@@ -14,30 +14,30 @@
 	<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
 	<!-- My Css -->
 	<link rel="stylesheet" href="style.css">
-	
+
 </head>
 
 <body class="font-sans text-gray-900 leading-normal tracking-wider bg-cover">
-	
+
 	<!-- Header & navigation -->
 	<nav id="header" class="hidden flex flex-wrap items-center block fixed inset-x-0 top-0 z-10 w-full bg-white border-b-2 border-black">
-		
+
 		<!-- Icon and Name -->
-    	<a href="#" class="p-2 mr-4 inline-flex items-center outline-none">
-			<div class="block rounded-full h-10 w-20 bg-cover bg-center" style="background-image: url('https://source.unsplash.com/user/dmadventure/Cb9nTN-66F0')"></div>
+    	<a href="#" class="p-2 inline-flex items-center outline-none">
+			<div class="block rounded-full h-10 w-20 bg-cover bg-center logo"></div>
         	<span class="text-xl ml-3 text-base font-bold uppercase">Siddique Irshad</span>
 		</a>
-		
+
 		<!-- Pin to top right corner Theme changing button -->
-		<div class="h-full w-15 pr-4">
-			<button id="in-head" onclick="changeTheme()" class="js-change-theme focus:outline-none">🌙</button>
+		<div class="h-full w-8">
+			<button id="in-head" onclick="changeTheme()" class="js-change-theme block focus:outline-none mx-auto">🌙</button>
 		</div>
-		
+
 		<!-- Hidden menu toggler -->
     	<button class="nav-toggler lg:hidden inline-flex p-3 ml-auto mr-3 rounded text-base hover:bg-teal-300 hover:text-white outline-none" data-target="#navigation">
 			<i class="fas fa-bars"></i>
 		</button>
-		
+
 		<!-- Navigation -->
 		<div class="hidden top-navbar mr-3 w-full lg:inline-flex lg:flex-grow lg:w-auto" id="navigation">
 			<div class="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto">
@@ -48,8 +48,8 @@
         		<a href="#contact" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center text-sm hover:bg-teal-300 outline-none">Contact</a>
         	</div>
 		</div>
-		
-	</nav> 
+
+	</nav>
 
 	<!-- # Profile Section -->
 	<div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
@@ -58,8 +58,8 @@
 		<div id="profile" class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0">
 			<div class="p-4 md:p-12 text-center lg:text-left">
 				<!-- Image for mobile view-->
-				<div class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" style="background-image: url('https://source.unsplash.com/user/fideletty/nWdhpUrXxYY')"></div>
-				
+				<div class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center logo"></div>
+
 				<h1 class="text-3xl font-bold pt-8 lg:pt-0">Irshad Ahmed Siddique</h1>
 				<div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-teal-500 opacity-25"></div>
 				<p class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start"> What you do</p>
@@ -78,20 +78,18 @@
 					<a class="link outline-none hover:text-teal-500" href="mailto:mr.irshad.siddique@gmail.com" data-tippy-content="mr.irshad.siddique@gmail.com"><i class="far fa-envelope fa-2x"></i></a>
 				</div>
 
-				
+
 			</div>
-			
+
 			<div class="absolute top-0 right-0 h-20 w-15 mr-5 mt-5">
 				<button id="out-head" onclick="changeTheme()" class="js-change-theme focus:outline-none">🌙</button>
 			</div>
 
 		</div>
 
-		<!--Img Col-->
-		<div class="w-full lg:w-2/5">
-			<!-- Big profile image for side bar (desktop) -->
-			<img src="https://source.unsplash.com/user/dmadventure/Cb9nTN-66F0" class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block">
-			<!-- Image from: http://unsplash.com/photos/MP0IUfwrn0A -->
+		<!-- Big profile image for side bar (desktop) -->
+		<div class="overflow-hidden hidden lg:block w-full lg:w-2/5 rounded-lg shadow-2xl">
+			<img src="https://source.unsplash.com/user/dmadventure/Cb9nTN-66F0">
 		</div>
 
 	</div>
@@ -145,36 +143,36 @@
 							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700"> #ES </span>
 							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700"> #WebApp </span>
 						</div>
-					</div> 
+					</div>
 					<div class="card max-w-sm opacity-1 bg-white rounded-lg mx-3 my-1 text-center overflow-hidden shadow-lg hover:shadow-outline">
 						<div class="p-2">
 							<div class="font-bold text-xl">
 								<a href="https://github.com/DeWill404/linux-terminal" target="_blank" class="outline-none hover:text-indigo-600">Terminal Replica</a>
 							</div>
 							<div class="mx-auto mb-3 w-2/5 pt-3 border-b-2 border-teal-500 opacity-25"></div>
-							<p class="text-sm"> Made linux termial Replica using python3, compatible with all kind of OS. It is a kind of light-weight, dumb terminal and very fast to operate. It create a kind of vertual environment to work with and have many commands to play. </p>
+							<p class="text-sm"> Made linux termial Replica using python3, compatible with all kind of OS. It is a kind of light-weight, dumb terminal and very fast to operate. It create a kind of virtual environment to work with and have many commands to play. </p>
 						</div>
 						<div class="p-1">
 							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700"> #Terminal </span>
 							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700"> #CLI </span>
 							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700"> #py3 </span>
 						</div>
-					</div> 
+					</div>
 					<div class="card max-w-sm opacity-1 bg-white rounded-lg mx-3 my-1 text-center overflow-hidden shadow-lg hover:shadow-outline">
 						<div class="p-2">
 							<div class="font-bold text-xl">
 								<a href="https://github.com/DeWill404/Visual-Stdio-CPP-Projects" target="_blank" class="outline-none hover:text-indigo-600">C++ Projects</a>
 							</div>
 							<div class="mx-auto mb-3 w-2/5 pt-3 border-b-2 border-teal-500 opacity-25"></div>
-							<p class="text-sm"> Git Repositry contains many cpp projects like, CPP Bank, Maze, Digital Clock, Stickmen, and Tic-Tac-Toe and are only compatible with Visual Studio Environment. Many concepts like GUI, multi-threding and many more are used. </p>
+							<p class="text-sm"> Git Repositry contains many cpp projects like, CPP Bank, Maze, Digital Clock, Stickmen, and Tic-Tac-Toe and are only compatible with Visual Studio Environment. Many concepts like GUI, multi-threding are used. </p>
 						</div>
 						<div class="p-1">
 							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700"> #C </span>
 							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700"> #Projects </span>
 							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700"> #GUI </span>
 						</div>
-					</div> 
-					<div class="card max-w-sm opacity-1 bg-white rounded-lg mx-3 my-1 text-center overflow-hidden shadow-lg hover:shadow-outline">
+					</div>
+					<div class="card max-w-sm opacity-1 bg-white rounded-lg mx-3 mb-1 text-center overflow-hidden shadow-lg hover:shadow-outline">
 						<div class="p-2">
 							<div class="font-bold text-xl">
 								<a href="https://github.com/DeWill404/Steganography" target="_blank" class="outline-none hover:text-indigo-600">Steganography</a>
@@ -187,7 +185,7 @@
 							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700"> #Stegano </span>
 							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700"> #tkinter </span>
 						</div>
-					</div> 	
+					</div>
 				</div>
 			</div>
 			<div class="text-right">
@@ -254,9 +252,9 @@
 								<td class="p-2 border-r border-dashed">Al-Hira School</td>
 								<td class="p-2">90%</td>
 							</tr>
-					</div> 
+					</div>
 				</div> -->
-				<div class="tab w-full overflow-hidden border-t">
+				<div class="tab w-full overflow-hidden border-t border-b">
 					<input class="absolute opacity-0 " id="tab-multi-three" type="checkbox" name="tabs">
 					<label class="block p-5 leading-normal cursor-pointer" for="tab-multi-three">
 						<div class="inline-block mx-0 w-1/5">Hobbies</div>
@@ -305,30 +303,24 @@
 		</div>
 	</footer>
 
-	
+
 	<!-- Fontawesome Kit -->
 	<script src="https://kit.fontawesome.com/c1d28c00bc.js" crossorigin="anonymous"></script>
-	
-	
 	<!-- Js framework -->
 	<script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
+	<!-- Popup showing on a tag -->
 	<script src="https://unpkg.com/tippy.js@4"></script>
-	
 	<!-- Amcharts Api -->
 	<script src="https://www.amcharts.com/lib/4/core.js"></script>
 	<script src="https://www.amcharts.com/lib/4/charts.js"></script>
 	<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
-	
 	<!-- Cloudflare jquery -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
-	
 	<!-- Owl Carousel -->
 	<script src="./owlcarousel/owl.carousel.min.js"></script>
-	
 	<!-- Custom JS -->
 	<script src="./script.js"></script>
 
-	
 </body>
 
 </html>

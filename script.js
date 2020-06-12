@@ -3,33 +3,31 @@ $(document).ready(function() {
 	// Owl Carousel Initialzer
 	$( ".owl-carousel").owlCarousel({
     	center : true,
-		items : 1,
-		nav : true,
-		dots : false,
-		navText : [
-			'<button class="inline-block px-2 py-1 bg-teal-700 mr-2 my-1 text-center text-white border-blue hover:shadow-outline hover:bg-teal-900 rounded-lg focus:outline-none"><i class="fas fa-angle-double-left"></i></button>', 
-			'<button class="inline-block px-2 py-1 bg-teal-700 ml-2 my-1 text-center text-white border-blue hover:shadow-outline hover:bg-teal-900 rounded-lg focus:outline-none"><i class="fas fa-angle-double-right"></i></button>'
-		],
-		loop : true,
 		margin : 10,
+		loop : true,
+		dots : false,
+		nav : true,
+		navText : [
+			'<button class="inline-block text-center mx-2 my-1 px-2 py-1 bg-teal-700 text-white border-blue rounded-lg hover:bg-teal-900 hover:shadow-outline">' +
+				'<i class="fas fa-angle-double-left"></i>' +
+			'</button>',
+			'<button class="inline-block text-center mx-2 my-1 px-2 py-1 bg-teal-700 text-white border-blue rounded-lg hover:bg-teal-900 hover:shadow-outline">' +
+				'<i class="fas fa-angle-double-right"></i>' +
+			'</button>'
+		],
 		responsive : {
-			// breakpoint from 480 up
-			480 : {
-				items : 2
-			},
-			// breakpoint from 768 up
-			768 : {
-				items : 3
-			}
+			  0 : { items : 1 },	// breakpoint from   0 up
+			480 : { items : 2 },	// breakpoint from 480 up
+			768 : { items : 3 }		// breakpoint from 768 up
 		}
 	});
 
 	// Navigation Toggler
 	$(".nav-toggler").each(function(_, navToggler) {
+
 		var target = $(navToggler).data("target");
-		$(navToggler).on("click", function() {
-			$(target).animate({ height: "toggle" });
-		});
+		$(navToggler).on("click", function() { $(target).animate({ height: "toggle" }) });
+
 	});
 
 	// To hide and show header if not on home page
@@ -37,7 +35,6 @@ $(document).ready(function() {
 
 });
 
-// js-change-theme
 
 // Storing current scrolled height
 var offsetHeight = document.getElementById('profile').offsetHeight;
@@ -46,19 +43,15 @@ var head = document.querySelector('nav');
 window.onscroll = function() { scrollFunction() };
 function scrollFunction() {
 	if (document.body.scrollTop < offsetHeight && document.documentElement.scrollTop < offsetHeight) {
-		if ( ! head.classList.contains('hidden') ) {
-			$('#header').addClass('hidden');
-		}
+		if (!head.classList.contains('hidden')) { $('#header').addClass('hidden') }
 	} else {
 		$('#header').removeClass('hidden');
 	}
 }
 
 
-
 //Init tooltips
 tippy('.link', { placement: 'bottom' } );
-
 
 
 //Toggle mode
@@ -81,7 +74,7 @@ function changeTheme() {
 		profile.classList.remove('bg-white');				profile.classList.add('bg-gray-900');
 		// Header Class
 		header.classList.remove('bg-white');				header.classList.add('bg-black');
-		header.classList.remove('border-black');				header.classList.add('border-white');
+		header.classList.remove('border-black');			header.classList.add('border-white');
 		// Skill Class
 		skill.classList.remove('bg-white');					skill.classList.add('bg-gray-900');
 		// Project Class
@@ -100,10 +93,10 @@ function changeTheme() {
 		// Body Class
 		body.classList.remove('text-gray-100');				body.classList.add('text-gray-900');
 		// Profile Class
-		profile.classList.remove('bg-gray-900');			profile.classList.add('bg-white');	
+		profile.classList.remove('bg-gray-900');			profile.classList.add('bg-white');
 		// Header Class
 		header.classList.remove('bg-black');				header.classList.add('bg-white');
-		header.classList.remove('border-white');				header.classList.add('border-black');
+		header.classList.remove('border-white');			header.classList.add('border-black');
 		// Skill Class
 		skill.classList.remove('bg-gray-900');				skill.classList.add('bg-white');
 		// Project Class
@@ -120,7 +113,6 @@ function changeTheme() {
 }
 
 
-
 // Skill Chart Function
 function radar_chart(selector, data) {
 	// Themes begin
@@ -129,8 +121,6 @@ function radar_chart(selector, data) {
 
 	// Create chart instance
 	var chart = am4core.create(selector, am4charts.RadarChart);
-
-
 	chart.data = data;
 
 	// Make chart not full circle
@@ -187,7 +177,7 @@ function radar_chart(selector, data) {
 }
 
 chart_data = [
-	{ "category": "Web Dev",	"value": 70,	"full": 100 }, 
+	{ "category": "Web Dev",	"value": 70,	"full": 100 },
 	{ "category": "Android",	"value": 20,	"full": 100 },
 	{ "category": "Python",		"value": 75,	"full": 100 },
 	{ "category": "Java",		"value": 75,	"full": 100 },
