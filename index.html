@@ -17,72 +17,141 @@
 
 </head>
 
-<body class="font-sans text-gray-900 leading-normal tracking-wider bg-cover">
+<body 
+class="font-sans text-gray-900 leading-normal tracking-wider bg-cover">
+
 
 	<!-- Header & navigation -->
-	<nav id="header" class="hidden flex flex-wrap items-center block fixed inset-x-0 top-0 z-10 w-full bg-white border-b-2 border-black">
+	<nav 
+	id="header" 
+	class="hidden flex flex-wrap items-center block fixed inset-x-0 top-0 z-10 w-full bg-white border-b-2 border-black">
 
 		<!-- Icon and Name -->
-    	<a href="#" class="p-2 inline-flex items-center outline-none">
+		<a 
+		href="#" 
+		class="p-2 inline-flex items-center outline-none">
 			<div class="block rounded-full h-10 w-20 bg-cover bg-center logo"></div>
-        	<span class="text-xl ml-3 text-base font-bold uppercase">Irshad Ahmed</span>
+			<span 
+			class="text-xl ml-3 text-base font-bold uppercase"> Irshad Ahmed </span>
 		</a>
 
 		<!-- Pin to top right corner Theme changing button -->
-		<div class="h-full w-8">
-			<button id="in-head" onclick="changeTheme()" class="js-change-theme block focus:outline-none mx-auto">🌙</button>
+		<div 
+		class="h-full w-8">
+			<button 
+			id="in-head" 
+			class="js-change-theme block focus:outline-none mx-auto"
+			onclick="changeTheme()"> 🌙 </button>
 		</div>
 
 		<!-- Hidden menu toggler -->
-    	<button class="nav-toggler lg:hidden inline-flex p-3 ml-auto mr-3 rounded text-base hover:bg-teal-300 hover:text-white outline-none" data-target="#navigation">
+		<button 
+		class="nav-toggler lg:hidden inline-flex p-3 ml-auto mr-3 rounded text-base hover:bg-teal-300 hover:text-white outline-none" 
+		data-target="#navigation">
 			<i class="fas fa-bars"></i>
 		</button>
 
 		<!-- Navigation -->
-		<div class="hidden top-navbar mr-3 w-full lg:inline-flex lg:flex-grow lg:w-auto" id="navigation">
-			<div class="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto">
-        		<a href="#" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center text-sm hover:bg-teal-300 outline-none">Home</a>
-        		<a href="#skills" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center text-sm hover:bg-teal-300 outline-none">Skills</a>
-				<a href="#projects" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center text-sm hover:bg-teal-300 outline-none">Projects</a>
-        		<a href="#aboutme" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center text-sm hover:bg-teal-300 outline-none">About me</a>
-        		<a href="#contact" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center text-sm hover:bg-teal-300 outline-none">Contact</a>
+		<div
+		id="navigation" 
+		class="hidden top-navbar mr-3 w-full lg:inline-flex lg:flex-grow lg:w-auto">
+			<div 
+			class="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto">
+				<a 
+				href="#" 
+				class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center text-sm hover:bg-teal-300 outline-none">Home</a>
+				<a 
+				href="#skills" 
+				class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center text-sm hover:bg-teal-300 outline-none">Skills</a>
+				<a 
+				href="#projects" 
+				class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center text-sm hover:bg-teal-300 outline-none">Projects</a>
+				<a 
+				href="#aboutme" 
+				class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center text-sm hover:bg-teal-300 outline-none">About me</a>
+				<a 
+				href="#contact" 
+				class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center text-sm hover:bg-teal-300 outline-none">Contact</a>
         	</div>
 		</div>
 
 	</nav>
 
+
 	<!-- # Profile Section -->
 	<div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
 
 		<!--Main Col-->
-		<div id="profile" class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0">
+		<div 
+		id="profile" 
+		class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0">
 			<div class="p-4 md:p-12 text-center lg:text-left">
+
 				<!-- Image for mobile view-->
 				<div class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center logo"></div>
-
+				
 				<h1 class="text-3xl font-bold pt-8 lg:pt-0">Irshad Ahmed Siddique</h1>
 				<div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-teal-500 opacity-25"></div>
-				<p class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start"> What you do</p>
-				<p class="pt-8 text-sm">Started with Programing languages, tried my hands at Web Development. Now, aspiring to be a Android Developer! </br> I have miles to go. </br> But, what's the fun if it's easy! </p>
+				<div class="p-2 text-base font-bold">
+					<h1>
+						I am
+						<span 
+							class="txt-rotate"
+							data-period="2000"
+							data-rotate='[ "Learner.", "Coder!", "Web Developer.", "App Developer.", " Competitor;)" ]'>
+						</span>
+					</h1>
+				</div>
+				<p class="text-sm">
+					Started with Programing languages, tried my hands at Web Development. Now, aspiring to be a Android Developer!
+					</br>
+					I have miles to go.
+					</br>
+					But, what's the fun if it's easy!
+				</p>
 
-				<!-- <div class="pt-12 pb-8">
-					<a href="#" class="bg-teal-700 hover:bg-teal-900 text-white font-bold py-2 px-4 rounded-full focus:outline-none">Download Resume</a>
+				<!-- <div 
+					class="pt-12 pb-8">
+					<a 
+					href="#" 
+					class="bg-teal-700 hover:bg-teal-900 text-white font-bold py-2 px-4 rounded-full focus:outline-none">Download Resume</a>
 				</div> -->
 
-				<div class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between">
-					<a class="link outline-none hover:text-orange-600" href="##" data-tippy-content="+91-77158-61550"><i class="fab fa-whatsapp-square fa-2x"></i></a>
-					<a class="link outline-none hover:text-indigo-500" href="https://www.facebook.com/irshad.siddique.31337/" data-tippy-content="@Irshad Siddique"><i class="fab fa-facebook-square fa-2x"></i></a>
-					<a class="link outline-none hover:text-yellow-500" href="https://www.instagram.com/siddique1550/" data-tippy-content="@Siddique1550"><i class="fab fa-instagram-square fa-2x"></i></a>
-					<a class="link outline-none hover:text-red-500" href="https://twitter.com/SiddiqueIrshad2" data-tippy-content="@SiddiqueIrshad2"><i class="fab fa-twitter-square fa-2x"></i></a>
-					<a class="link outline-none hover:text-green-500" href="https://www.linkedin.com/in/irshad-ahmed-30b5571a9/" data-tippy-content="@irshad-ahmed"><i class="fab fa-linkedin-in fa-2x"></i></a>
-					<a class="link outline-none hover:text-teal-500" href="mailto:mr.irshad.siddique@gmail.com" data-tippy-content="mr.irshad.siddique@gmail.com"><i class="far fa-envelope fa-2x"></i></a>
+				<div 
+				class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between">
+					<a 
+					data-tippy-content="+91-77158-61550"
+					href="##"
+					class="link outline-none hover:text-orange-600"> <i class="fab fa-whatsapp-square fa-2x"></i> </a>
+					<a 
+					data-tippy-content="@Irshad Siddique"
+					href="https://www.facebook.com/irshad.siddique.31337/"
+					class="link outline-none hover:text-indigo-500"> <i class="fab fa-facebook-square fa-2x"></i> </a>
+					<a 
+					data-tippy-content="@Siddique1550"
+					href="https://www.instagram.com/siddique1550/"
+					class="link outline-none hover:text-yellow-500"> <i class="fab fa-instagram-square fa-2x"></i> </a>
+					<a 
+					data-tippy-content="@SiddiqueIrshad2"
+					href="https://twitter.com/SiddiqueIrshad2"
+					class="link outline-none hover:text-red-500"> <i class="fab fa-twitter-square fa-2x"></i> </a>
+					<a 
+					data-tippy-content="@irshad-ahmed"
+					href="https://www.linkedin.com/in/irshad-ahmed-30b5571a9/"
+					class="link outline-none hover:text-green-500"> <i class="fab fa-linkedin-in fa-2x"></i> </a>
+					<a 
+					data-tippy-content="mr.irshad.siddique@gmail.com"
+					href="mailto:mr.irshad.siddique@gmail.com"
+					class="link outline-none hover:text-teal-500"> <i class="far fa-envelope fa-2x"></i> </a>
 				</div>
-
 
 			</div>
 
 			<div class="absolute top-0 right-0 h-20 w-15 mr-5 mt-5">
-				<button id="out-head" onclick="changeTheme()" class="js-change-theme focus:outline-none">🌙</button>
+				<button 
+				id="out-head" 
+				class="js-change-theme focus:outline-none"
+				onclick="changeTheme()"> 🌙 </button>
 			</div>
 
 		</div>
@@ -95,10 +164,15 @@
 	</div>
 
 	<!-- Skills -->
-	<div class="max-w-4xl flex items-center justify-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
-		<div id="skills" class=" md:w-3/4 sm:w-full h-3/4 mx-6 bg-white opacity-75 rounded-lg ">
+	<div 
+	class="max-w-4xl flex items-center justify-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
+		<div 
+		id="skills" 
+		class=" md:w-3/4 sm:w-full h-3/4 mx-6 bg-white opacity-75 rounded-lg ">
 			<div class="flex relative text-center lg:text-left">
-				<div class="px-4 py-5 relative w-full" style="height: 370px">
+				<div 
+				class="px-4 py-5 relative w-full" 
+				style="height: 370px">
 					<span class="text-xl ml-3 text-base font-bold uppercase">Skills</span>
 					<div class="mx-auto lg:mx-0 w-2/5 pt-3 border-b-2 border-teal-500 opacity-25"></div>
 					<div id="chartdiv" class="w-full" style="height: 300px"></div>
@@ -108,21 +182,30 @@
 	</div>
 
 	<!-- Projects -->
-	<div class="max-w-4xl flex items-center justify-center p-2 h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
-		<div id="projects" class="bg-white px-4 py-6 text-center opacity-75 rounded-lg mx-6 w-full">
+	<div 
+	class="max-w-4xl flex items-center justify-center p-2 h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
+		<div 
+		id="projects" 
+		class="bg-white px-4 py-6 text-center opacity-75 rounded-lg mx-6 w-full">
 			<div class="lg:text-left">
 				<span class="text-xl ml-3 text-base font-bold uppercase">Projects</span>
 				<div class="mx-auto mb-3 lg:mx-0 w-2/5 pt-3 border-b-2 border-teal-500 opacity-25"></div>
 			</div>
 			<div class="w-ful">
 				<div class="owl-carousel">
-					<div class="card max-w-sm opacity-1 bg-white rounded-lg mx-3 my-1 text-center overflow-hidden shadow-lg hover:shadow-outline">
+					<div 
+					class="card max-w-sm opacity-1 bg-white rounded-lg mx-3 my-1 text-center overflow-hidden shadow-lg hover:shadow-outline">
 						<div class="p-2">
 							<div class="font-bold text-xl">
-								<a href="https://github.com/DeWill404/minesweeper" target="_blank" class="outline-none hover:text-indigo-600">Minesweeper</a>
+								<a 
+								href="https://github.com/DeWill404/minesweeper" 
+								target="_blank" 
+								class="outline-none hover:text-indigo-600">Minesweeper</a>
 							</div>
 							<div class="mx-auto mb-3 w-2/5 pt-3 border-b-2 border-teal-500 opacity-25"></div>
-							<p class="text-sm"> Minesweeper game developed in language C, compatible with Turbo C environment. Encorprated with many concept of C like, overloading, self written GUI functions, and totally bug free and tested on many PC. </p>
+							<p class="text-sm">
+								Minesweeper game developed in language C, compatible with Turbo C environment. Encorprated with many concept of C like, overloading, self written GUI functions, and totally bug free and tested on many PC.
+							</p>
 						</div>
 						<div class="p-1">
 							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700"> #Turbo C </span>
@@ -130,13 +213,19 @@
 							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700"> #game </span>
 						</div>
 					</div>
-					<div class="card max-w-sm opacity-1 bg-white rounded-lg mx-3 my-1 text-center overflow-hidden shadow-lg hover:shadow-outline">
+					<div 
+					class="card max-w-sm opacity-1 bg-white rounded-lg mx-3 my-1 text-center overflow-hidden shadow-lg hover:shadow-outline">
 						<div class="p-2">
 							<div class="font-bold text-xl">
-								<a href="https://github.com/DeWill404/Paint_WebApp" target="_blank" class="outline-none hover:text-indigo-600">Paint Web App</a>
+								<a 
+								href="https://github.com/DeWill404/Paint_WebApp" 
+								target="_blank" 
+								class="outline-none hover:text-indigo-600">Paint Web App</a>
 							</div>
 							<div class="mx-auto mb-3 w-2/5 pt-3 border-b-2 border-teal-500 opacity-25"></div>
-							<p class="text-sm"> Paint on the canvas using many tools like brush, pencils, shapes or free hande drawings and colors or change size of tools and Download it you want, Redo & Undo at most 3 times, scripts are totally written in ECMAScript. </p>
+							<p class="text-sm">
+								Paint on the canvas using many tools like brush, pencils, shapes or free hande drawings and colors or change size of tools and Download it you want, Redo & Undo at most 3 times, scripts are totally written in ECMAScript.
+							</p>
 						</div>
 						<div class="p-1">
 							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700"> #Paint </span>
@@ -144,13 +233,19 @@
 							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700"> #WebApp </span>
 						</div>
 					</div>
-					<div class="card max-w-sm opacity-1 bg-white rounded-lg mx-3 my-1 text-center overflow-hidden shadow-lg hover:shadow-outline">
+					<div 
+					class="card max-w-sm opacity-1 bg-white rounded-lg mx-3 my-1 text-center overflow-hidden shadow-lg hover:shadow-outline">
 						<div class="p-2">
 							<div class="font-bold text-xl">
-								<a href="https://github.com/DeWill404/linux-terminal" target="_blank" class="outline-none hover:text-indigo-600">Terminal Replica</a>
+								<a 
+								href="https://github.com/DeWill404/linux-terminal" 
+								target="_blank" 
+								class="outline-none hover:text-indigo-600">Terminal Replica</a>
 							</div>
 							<div class="mx-auto mb-3 w-2/5 pt-3 border-b-2 border-teal-500 opacity-25"></div>
-							<p class="text-sm"> Made linux termial Replica using python3, compatible with all kind of OS. It is a kind of light-weight, dumb terminal and very fast to operate. It create a kind of virtual environment to work with and have many commands to play. </p>
+							<p class="text-sm">
+								Made linux termial Replica using python3, compatible with all kind of OS. It is a kind of light-weight, dumb terminal and very fast to operate. It create a kind of virtual environment to work with and have many commands to play.
+							</p>
 						</div>
 						<div class="p-1">
 							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700"> #Terminal </span>
@@ -158,13 +253,19 @@
 							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700"> #py3 </span>
 						</div>
 					</div>
-					<div class="card max-w-sm opacity-1 bg-white rounded-lg mx-3 my-1 text-center overflow-hidden shadow-lg hover:shadow-outline">
+					<div 
+					class="card max-w-sm opacity-1 bg-white rounded-lg mx-3 my-1 text-center overflow-hidden shadow-lg hover:shadow-outline">
 						<div class="p-2">
 							<div class="font-bold text-xl">
-								<a href="https://github.com/DeWill404/Visual-Stdio-CPP-Projects" target="_blank" class="outline-none hover:text-indigo-600">C++ Projects</a>
+								<a 
+								href="https://github.com/DeWill404/Visual-Stdio-CPP-Projects" 
+								target="_blank" 
+								class="outline-none hover:text-indigo-600">C++ Projects</a>
 							</div>
 							<div class="mx-auto mb-3 w-2/5 pt-3 border-b-2 border-teal-500 opacity-25"></div>
-							<p class="text-sm"> Git Repositry contains many cpp projects like, CPP Bank, Maze, Digital Clock, Stickmen, and Tic-Tac-Toe and are only compatible with Visual Studio Environment. Many concepts like GUI, multi-threding are used. </p>
+							<p class="text-sm">
+								Git Repositry contains many cpp projects like, CPP Bank, Maze, Digital Clock, Stickmen, and Tic-Tac-Toe and are only compatible with Visual Studio Environment. Many concepts like GUI, multi-threding are used.
+							</p>
 						</div>
 						<div class="p-1">
 							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700"> #C </span>
@@ -172,13 +273,19 @@
 							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700"> #GUI </span>
 						</div>
 					</div>
-					<div class="card max-w-sm opacity-1 bg-white rounded-lg mx-3 mb-1 text-center overflow-hidden shadow-lg hover:shadow-outline">
+					<div 
+					class="card max-w-sm opacity-1 bg-white rounded-lg mx-3 mb-1 text-center overflow-hidden shadow-lg hover:shadow-outline">
 						<div class="p-2">
 							<div class="font-bold text-xl">
-								<a href="https://github.com/DeWill404/Steganography" target="_blank" class="outline-none hover:text-indigo-600">Steganography</a>
+								<a 
+								href="https://github.com/DeWill404/Steganography" 
+								target="_blank" 
+								class="outline-none hover:text-indigo-600">Steganography</a>
 							</div>
 							<div class="mx-auto mb-3 w-2/5 pt-3 border-b-2 border-teal-500 opacity-25"></div>
-							<p class="text-sm"> This project can hide under an image and also retrive text from it. Text can be manually entered or selected from file. It is GUI application developed using py3, also provide feature of encryption and decryption of data with password. </p>
+							<p class="text-sm">
+								This project can hide under an image and also retrive text from it. Text can be manually entered or selected from file. It is GUI application developed using py3, also provide feature of encryption and decryption of data with password.
+							</p>
 						</div>
 						<div class="p-1">
 							<span class="inline-block bg-gray-500 rounded-lg px-2 py-1 my-1 text-sm font-semibold text-gray-700"> #py3 </span>
@@ -189,14 +296,25 @@
 				</div>
 			</div>
 			<div class="text-right">
-				<button class="text-base py-2 px-4 rounded-full font-bold focus:outline-none bg-teal-700 hover:bg-teal-900 hover:text-black"><a href="https://github.com/DeWill404" target="_blank" class="focus:outline-none">More on Github <i class="fab fa-github"></i></a></button>
+				<button 
+				class="text-base py-2 px-4 rounded-full font-bold focus:outline-none bg-teal-700 hover:bg-teal-900 hover:text-black">
+					<a 
+					href="https://github.com/DeWill404" 
+					target="_blank" 
+					class="focus:outline-none">More on Github
+												<i class="fab fa-github"></i>
+											</a>
+				</button>
 			</div>
 		</div>
 	</div>
 
 	<!-- About me -->
-	<div class="max-w-4xl flex items-center justify-center p-2 h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
-		<div id="aboutme" class="w-full md:w-9/10 bg-white rounded-lg opacity-75 mx-auto p-8">
+	<div
+	class="max-w-4xl flex items-center justify-center p-2 h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
+		<div 
+		id="aboutme" 
+		class="w-full md:w-9/10 bg-white rounded-lg opacity-75 mx-auto p-8">
 			<div class="text-center lg:text-left">
 				<span class="text-xl ml-3 text-base font-bold uppercase">About me</span>
 				<div class="mx-auto mb-3 lg:mx-0 w-2/5 pt-3 border-b-2 border-teal-500 opacity-25"></div>
@@ -206,9 +324,15 @@
 			</div>
 			<div class="shadow-md">
 				<div class="tab w-full overflow-hidden border-t">
-					<input class="absolute opacity-0 " id="tab-multi-one" type="checkbox" name="tabs">
-					<label class="block p-5 leading-normal cursor-pointer" for="tab-multi-one">
-						<div class="inline-block mx-0 w-1/5">Education</div>
+					<input 
+						name="tabs"
+						type="checkbox"
+						id="tab-multi-one"
+						class="absolute opacity-0 ">
+					<label 
+						for="tab-multi-one"
+						class="block p-5 leading-normal cursor-pointer">
+							<div class="inline-block mx-0 w-1/5"> Education </div>
 					</label>
 					<div class="tab-content overflow-hidden border-l-2 border-r-2 border-indigo-500 leading-normal">
 						<table class="text-center my-2 mx-auto">
@@ -231,9 +355,15 @@
 					</div>
 				</div>
 				<!-- <div class="tab w-full overflow-hidden border-t">
-					<input class="absolute opacity-0" id="tab-multi-two" type="checkbox" name="tabs">
-					<label class="block p-5 leading-normal cursor-pointer" for="tab-multi-two">
-						<div class="inline-block mx-0 w-1/5">Work</div>
+					<input 
+						name="tabs"
+						type="checkbox"
+						id="tab-multi-two"
+						class="absolute opacity-0">
+					<label
+						for="tab-multi-two" 
+						class="block p-5 leading-normal cursor-pointer" >
+							<div class="inline-block mx-0 w-1/5">Work</div>
 					</label>
 					<div class="tab-content overflow-hidden border-l-2 border-r-2 border-indigo-500 leading-normal">
 						<table class="text-center my-2 mx-auto">
@@ -255,9 +385,15 @@
 					</div>
 				</div> -->
 				<div class="tab w-full overflow-hidden border-t border-b">
-					<input class="absolute opacity-0 " id="tab-multi-three" type="checkbox" name="tabs">
-					<label class="block p-5 leading-normal cursor-pointer" for="tab-multi-three">
-						<div class="inline-block mx-0 w-1/5">Hobbies</div>
+					<input
+						name="tabs"
+						type="checkbox"
+						id="tab-multi-three" 
+						class="absolute opacity-0 ">
+					<label 
+						for="tab-multi-three"
+						class="block p-5 leading-normal cursor-pointer">
+							<div class="inline-block mx-0 w-1/5">Hobbies</div>
 					</label>
 					<div class="tab-content overflow-hidden border-l-2 border-r-2 border-indigo-500 leading-normal">
 						<p class="p-5">
@@ -270,7 +406,9 @@
 	</div>
 
 	<!-- contact -->
-	<footer id="contact" class="bg-white text-base">
+	<footer 
+	id="contact" 
+	class="bg-white text-base">
 		<!-- Will be modified letter
 		<div class="p-5 float-right mx-auto">
 			<input class="w-32 bg-gray-100 rounded mr-2 border border-gray-400 focus:outline-none focus:border-indigo-500 text-base py-2 px-4" type="text">
@@ -279,26 +417,52 @@
 		<div>
 			<div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
 				<span class="flex text-xl justify-center md:justify-start">
-					<a href="##" data-tippy-content="+91-77158-61550" target="_blank" class="link mx-2 px-3 py-1 rounded-lg outline-none border-2 border-black hover:bg-orange-600 hover:border-orange-600 hover:text-white">
-						<i class="fab fa-whatsapp"></i>
+					<a 
+						href="##" 
+						target="_blank"
+						data-tippy-content="+91-77158-61550" 
+						class="link mx-2 px-3 py-1 rounded-lg outline-none border-2 border-black hover:bg-orange-600 hover:border-orange-600 hover:text-white">
+							<i class="fab fa-whatsapp"></i>
 					</a>
-					<a href="https://www.facebook.com/irshad.siddique.31337/" data-tippy-content="@Irshad Siddique" target="_blank" class="link mx-2 px-3 py-1 rounded-lg outline-none border-2 border-black hover:bg-indigo-600 hover:border-indigo-600 hover:text-teal-300">
-						<i class="fab fa-facebook-f"></i>
+					<a 
+						href="https://www.facebook.com/irshad.siddique.31337/" 
+						target="_blank" 
+						data-tippy-content="@Irshad Siddique" 
+						class="link mx-2 px-3 py-1 rounded-lg outline-none border-2 border-black hover:bg-indigo-600 hover:border-indigo-600 hover:text-teal-300">
+							<i class="fab fa-facebook-f"></i>
 					</a>
-					<a href="https://www.instagram.com/siddique1550/" data-tippy-content="@Siddique1550" target="_blank" class="link mx-2 px-2 py-1 rounded-lg outline-none border-2 border-black hover:bg-yellow-600 hover:border-yellow-600 hover:text-yellow-300">
-						<i class="fab fa-instagram"></i>
+					<a 
+						href="https://www.instagram.com/siddique1550/"
+						target="_blank"
+						data-tippy-content="@Siddique1550" 
+						class="link mx-2 px-2 py-1 rounded-lg outline-none border-2 border-black hover:bg-yellow-600 hover:border-yellow-600 hover:text-yellow-300">
+							<i class="fab fa-instagram"></i>
 					</a>
-					<a href="https://twitter.com/SiddiqueIrshad2" data-tippy-content="@SiddiqueIrshad2" target="_blank" class="link mx-2 px-2 py-1 rounded-lg outline-none border-2 border-black hover:bg-red-600 hover:border-red-600 hover:text-green-300">
-						<i class="fab fa-twitter"></i>
+					<a 
+						href="https://twitter.com/SiddiqueIrshad2" 
+						target="_blank"
+						data-tippy-content="@SiddiqueIrshad2"
+						class="link mx-2 px-2 py-1 rounded-lg outline-none border-2 border-black hover:bg-red-600 hover:border-red-600 hover:text-green-300">
+							<i class="fab fa-twitter"></i>
 					</a>
-					<a href="https://www.linkedin.com/in/irshad-ahmed-30b5571a9/" data-tippy-content="@irshad-ahmed" target="_blank" class="link mx-2 px-2 py-1 rounded-lg outline-none border-2 border-black hover:bg-green-600 hover:border-green-600 hover:text-red-300">
-						<i class="fab fa-linkedin-in"></i>
+					<a 
+						href="https://www.linkedin.com/in/irshad-ahmed-30b5571a9/" 
+						target="_blank"
+						data-tippy-content="@irshad-ahmed"
+						class="link mx-2 px-2 py-1 rounded-lg outline-none border-2 border-black hover:bg-green-600 hover:border-green-600 hover:text-red-300">
+							<i class="fab fa-linkedin-in"></i>
 					</a>
-					<a href="mailto:mr.irshad.siddique@gmail.com" data-tippy-content="mr.irshad.siddique@gmail.com" target="_blank" class="link mx-2 px-2 py-1 rounded-lg outline-none border-2 border-black hover:bg-teal-600 hover:border-teal-600 hover:text-indigo-300">
-						<i class="far fa-envelope"></i>
+					<a 
+						href="mailto:mr.irshad.siddique@gmail.com" 
+						target="_blank"
+						data-tippy-content="mr.irshad.siddique@gmail.com"
+						class="link mx-2 px-2 py-1 rounded-lg outline-none border-2 border-black hover:bg-teal-600 hover:border-teal-600 hover:text-indigo-300">
+							<i class="far fa-envelope"></i>
 					</a>
 				</span>
-				<p class="text-sm sm:ml-auto sm:mt-1">&copy;2020 - Irshad Ahmed - All Right Reserved </p>
+				<p class="text-sm sm:ml-auto sm:mt-1">
+					&copy;2020 - Irshad Ahmed - All Right Reserved
+				</p>
 			</div>
 		</div>
 	</footer>
