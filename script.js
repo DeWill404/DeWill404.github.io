@@ -55,6 +55,7 @@ tippy('.link', { placement: 'bottom' } );
 
 
 //Toggle mode
+const toggle = document.getElementsByClassName("js-change-theme");
 const body = document.querySelector('body');
 const icon = document.getElementById('favicon');
 const profile = document.getElementById('profile');
@@ -67,10 +68,10 @@ const contact = document.getElementById('contact');
 // Theme changing function
 function changeTheme() {
 	if (body.classList.contains('text-gray-900')) {
+		// Button Text
+		for (i = 0; i < toggle.length; i++) { toggle[i].innerHTML = "🌞"; }
 		// Favicon image
 		icon.href="./src/icon_dark.png";
-		// Button Text
-		this.innerHTML = "🌞";
 		// Body Class
 		body.classList.remove('text-gray-900');				body.classList.add('text-gray-100');
 		// Profile Class
@@ -91,10 +92,10 @@ function changeTheme() {
 		// contact links modification
 		$('.link').removeClass('border-black');				$('.link').addClass('border-white');
 	} else {
+		// Button Text
+		for (i = 0; i < toggle.length; i++) { toggle[i].innerHTML = "🌙"; }
 		// Favicon image
 		icon.href="./src/icon_light.png";
-		// Button Text
-		this.innerHTML = "🌙";
 		// Body Class
 		body.classList.remove('text-gray-100');				body.classList.add('text-gray-900');
 		// Profile Class
