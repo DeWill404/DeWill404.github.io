@@ -56,6 +56,7 @@ tippy('.link', { placement: 'bottom' } );
 
 //Toggle mode
 const body = document.querySelector('body');
+const icon = document.getElementById('favicon');
 const profile = document.getElementById('profile');
 const header = document.getElementById('header');
 const skill = document.getElementById('skills');
@@ -66,6 +67,8 @@ const contact = document.getElementById('contact');
 // Theme changing function
 function changeTheme() {
 	if (body.classList.contains('text-gray-900')) {
+		// Favicon image
+		icon.href="./src/icon_dark.png";
 		// Button Text
 		this.innerHTML = "🌞";
 		// Body Class
@@ -88,6 +91,8 @@ function changeTheme() {
 		// contact links modification
 		$('.link').removeClass('border-black');				$('.link').addClass('border-white');
 	} else {
+		// Favicon image
+		icon.href="./src/icon_light.png";
 		// Button Text
 		this.innerHTML = "🌙";
 		// Body Class
