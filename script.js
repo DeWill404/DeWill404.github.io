@@ -8,10 +8,10 @@ $(document).ready(function() {
 		dots : false,
 		nav : true,
 		navText : [
-			'<button class="inline-block text-center mx-2 my-1 outline-none px-2 py-1 bg-teal-700 text-white rounded hover:bg-teal-900 hover:shadow-outline">' +
+			'<button class="inline-block text-center mx-2 my-1 outline-none px-2 py-1 bg-teal-700 text-teal rounded hover:bg-teal-900 hover:shadow-outline">' +
 				'<i class="fas fa-angle-double-left"></i>' +
 			'</button>',
-			'<button class="inline-block text-center mx-2 my-1 outline-none px-2 py-1 bg-teal-700 text-white rounded hover:bg-teal-900 hover:shadow-outline">' +
+			'<button class="inline-block text-center mx-2 my-1 outline-none px-2 py-1 bg-teal-700 text-teal rounded hover:bg-teal-900 hover:shadow-outline">' +
 				'<i class="fas fa-angle-double-right"></i>' +
 			'</button>'
 		],
@@ -183,12 +183,13 @@ function radar_chart(selector, data) {
 }
 
 chart_data = [
-	{ "category": "Web Dev",	"value": 70,	"full": 100 },
-	{ "category": "Android",	"value": 20,	"full": 100 },
-	{ "category": "Python",		"value": 75,	"full": 100 },
+	{ "category": "Web Dev",	"value": 80,	"full": 100 },
+	{ "category": "Python",		"value": 80,	"full": 100 },
 	{ "category": "Java",		"value": 75,	"full": 100 },
-	{ "category": "C",			"value": 70,	"full": 100},
-	{ "category": "Git",		"value": 60,	"full": 100}
+	{ "category": "Git",		"value": 90,	"full": 100 },
+	{ "category": "C",			"value": 70,	"full": 100 },
+	{ "category": "Javascript",	"value": 60,	"full": 100 },
+	{ "category": "Android",	"value": 50,	"full": 100 }
 ];
 
 // Skill Chart Function Call
@@ -244,7 +245,6 @@ window.onload = function() {
 	}
 	// INJECT CSS
 	var css = document.createElement("style");
-	css.type = "text/css";
 	css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
 	document.body.appendChild(css);
 };
